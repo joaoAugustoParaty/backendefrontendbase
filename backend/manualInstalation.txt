@@ -1,0 +1,56 @@
+1-Entra na pasta backend digitando no terminal: cd backend
+2-Instale na pasta backend: npm init -y
+3-Instale na pasta backend: npm i express 
+4-Instale na pasta backend: npm i dotenv
+5-Instale na pasta backend: npm i nodemon -D
+6- Rode o servidor digitando: nodemon index.js
+7- No package.json copie e cole esse código abaixo do Debug:  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+    
+  },
+
+  ____________Comunicação com o MongoDB_____________
+
+  1-Instale na pasta backend: npm i mongoose
+  2-Entre no site Mongodb e faça o login
+  3-Clique na opção Database Access
+  4-Clique no botão + ADD New DATABASE USER 
+  5-Crie o nome e o password nos campos destinados e depois clique em Add User
+  6-Clique em Databases
+  7-CLique em Connect
+  8-Clique em COnnect your application
+  9-Copie o código que aparecer por exemplo: mongodb+srv://<username>:<password>@cluster0.tr19o.mongodb.net/?retryWrites=true&w=majority
+  10-Agora volte para a pasta .env dentro do vscode cole o código usando URL e substituindo os campos do <username> e <password> pelo username e password que você colocou no passo 5 desse tutorial e coloque antes do ponto de interogação o nome da pasta do projeto.
+  11- Rode no terminal usando: npm run server 
+
+
+  ____________Input Validations_____________
+1 - Depois de ter criado o userRoutes.js dentro de routes e ter colocado a rota no idex.js, vá até o postman
+
+2 - Crie uma New Request clicando no +
+
+3 - Mude para POST
+4 - Digite o localhost exemplo: http://locallhost:5000/register 
+5 - Marque a opção Body e depois a opção raw e escolha a opção JSON
+6 - Escreva o name, email, password exemplo: 
+{
+  "name": "joao augusto",
+  "email": "joaodrow@gmail.com",
+  "password": "123456"
+}
+
+7 - vá até o site https://express-validator.github.io/docs/
+8 - Instale na pasta backend (só entrar na pasta via terminal cd backend) npm i express-validator
+
+
+____________________Create Adm.____________________
+1 -  Instale na pasta backend usando o terminal digite: npm i bcrypt
+
+_____Onde parei____
+https://www.youtube.com/watch?v=j-3K7D4jHOE&list=PLZdXBpi-l7C7bM_rwTOcWaZv8FInVQYMz&index=5
+video começa em 2 min
+
+2 - Instale o: npm i jsonwebtoken
+
+3- No .env coloque JWT_SECRET=mystrongjwtsecret (mystrongjwtsecret pode ser trocado por outra senha)
